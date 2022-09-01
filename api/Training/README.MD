@@ -1,0 +1,1 @@
+docker build -t training:1.0 .
