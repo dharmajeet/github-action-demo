@@ -18,9 +18,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: 
-         echo $PWD
-         dotnet restore
+      run: dotnet restore
+      working-directory: ../../api/mongodb-dotnet-example
     - name: Build
       run: dotnet build --no-restore
     - name: Test
